@@ -1,11 +1,10 @@
 /**
- * @file		cubeLib.ino
- * @brief		Definition des fonctions permettant de tester le Cube Ã  LED3x3x3.
- * @author	Theodore ATEBA
- * @version	1.0.
- * @date		29 Mai 2015
- */
-
+* @file			cubeLib.ino
+* @brief		Definition des fonctions permettant de tester le Cube a  LED3x3x3.
+* @author		Theodore ATEBA
+* @version	1.0.
+* @date			29 Mai 2015
+*/
 
 //============================================================================
 //	Branchement du Cube a l'Arduino Uno
@@ -28,15 +27,15 @@
 //============================================================================
 
 /**
- * @fn					cubeOn
- * @brief			Allumer toutes les leds du cube.
-* @param[in]	tempo temps d'allumage du cube.
-*/
+ * @fn			cubeOn
+ * @brief		Allumer toutes les leds du cube.
+ * @param[in]	tempo temps d'allumage du cube.
+ */
 void cubeOn(long tempo);
 	
 /**
-* @fn					cubeOff
-* @brief			Eteindre toutes les leds du cube
+* @fn			cubeOff
+* @brief		Eteindre toutes les leds du cube
 * @param[in]	tempo temps d'extinction du cube.
 */
 void cubeOff(long tempo);
