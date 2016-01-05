@@ -30,15 +30,15 @@
 //=====================================================================================
 
 	/**
-	* @fn			cubeOn
-	* @brief		Allumer toutes les leds du cube.
+	* @fn					cubeOn
+	* @brief			Allumer toutes les leds du cube.
 	* @param[in]	tempo temps d'allumage du cube.
 	*/
 	void cubeOn(long tempo);
 	
 	/**
-	* @fn			cubeOff
-	* @brief		Eteindre toutes les leds du cube
+	* @fn					cubeOff
+	* @brief			Eteindre toutes les leds du cube
 	* @param[in]	tempo temps d'extinction du cube.
 	*/
 	void cubeOff(long tempo);
