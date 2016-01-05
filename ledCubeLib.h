@@ -6,6 +6,9 @@
  * @date	29 Mai 2015
  */
 
+#ifndef _LEDCUBELIB_H_
+#define _LEDCUBELIB_H_
+
 //============================================================================
 //	Branchement du Cube a l'Arduino Uno
 //============================================================================
@@ -180,3 +183,4 @@ void rotation(long tempo);
  * @param[in]	nbr nobre de fois que l'on veut voir l'effet
  */
 void effect(long tempo, char nbr);
+#endif /* _LEDCUBELIB_H_ */

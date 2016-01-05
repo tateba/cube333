@@ -1,15 +1,17 @@
 /**
-* @file		cube333.ino
-* @brief	Programmation d'un cube 3 * 3 * 3 pour faire des jeu de limiere.
-* @author	Theodore ATEBA
-* @version	1.0.
-* @date		29 Mai 2015
-*/
-	
+ * @file		cube333.ino
+ * @brief	Programmation d'un cube 3 * 3 * 3 pour faire des jeu de limiere.
+ * @author	Theodore ATEBA
+ * @version	1.0.
+ * @date		29 Mai 2015
+ */
+
+#include "ledCubeLib.h"
+
 /**
-* @fn		setup
-* @brief	Point d'entree de l'application et fonction principal.
-*/
+ * @fn		setup
+ * @brief	Point d'entree de l'application et fonction principal.
+ */
 void setup(){
 	for(int cubePin = 2; cubePin <= 13; cubePin++){
 		pinMode(cubePin, OUTPUT);
@@ -17,9 +19,9 @@ void setup(){
 }
 	
 /**
-* @fn		loop
-* @brief	Fonction principale du programme.
-*/
+ * @fn		loop
+ * @brief	Fonction principale du programme.
+ */
 void loop() 
 {
 	cubeBlink(50, 10); // Clignoter 10 fois avec un delay de 50ms entre les on - off des leds
