@@ -1,10 +1,10 @@
 /**
-* @file			cubeLib.ino
-* @brief		Definition des fonctions permettant de tester le Cube a  LED3x3x3.
-* @author		Theodore ATEBA
-* @version	1.0.
-* @date			29 Mai 2015
-*/
+ * @file		cubeLib.ino
+ * @brief	Definition des fonctions permettant de tester le Cube a  LED3x3x3.
+ * @author	Theodore ATEBA
+ * @version	1.0.
+ * @date		29 Mai 2015
+ */
 
 //============================================================================
 //	Branchement du Cube a l'Arduino Uno
@@ -34,46 +34,46 @@
 void cubeOn(long tempo);
 	
 /**
-* @fn			cubeOff
-* @brief		Eteindre toutes les leds du cube
-* @param[in]	tempo temps d'extinction du cube.
-*/
+ * @fn			cubeOff
+ * @brief		Eteindre toutes les leds du cube
+ * @param[in]	tempo temps d'extinction du cube.
+ */
 void cubeOff(long tempo);
 
 /**
-* @fn			shadowOn
-* @brief		Allumage aleatoire.
-* @param[in]	tempo temps entre l'allumage de deux LEDs, en milli-seconde
-*/
+ * @fn			shadowOn
+ * @brief		Allumage aleatoire.
+ * @param[in]	tempo temps entre l'allumage de deux LEDs, en milli-seconde
+ */
 void shadowOn(long tempo);
 	
 /**
-* @fn			shadowOff
-* @brief		Eteindre aleatoirement les Leds du cube.
-* @param[in]	tempo temps entre l'extinction de deux LEDs, en milli-seconde
-*/
+ * @fn			shadowOff
+ * @brief		Eteindre aleatoirement les Leds du cube.
+ * @param[in]	tempo temps entre l'extinction de deux LEDs, en milli-seconde
+ */
 	void shadowOff(long tempo);
 
-	/**
-	* @fn			lineWrite
-	* @brief		piloter les Leds des plans du cube qui sont actifs.
-	* @param[in]	lineState
-	*/
-	void lineWrite( int lineState[9]);
+/**
+ * @fn			lineWrite
+ * @brief		piloter les Leds des plans du cube qui sont actifs.
+ * @param[in]	lineState
+ */
+void lineWrite( int lineState[9]);
 
-	/**
-	* @fn			layerWrite
-	* @brief		Selection d'un des trois plans du cube.
-	* @param[in]	lineState
-	*/
-	void layerWrite(int layerState[3]);
+/**
+ * @fn			layerWrite
+ * @brief		Selection d'un des trois plans du cube.
+ * @param[in]	lineState
+ */
+void layerWrite(int layerState[3]);
 
-	/**
-	* @fn			cubeTopOff
-	* @brief		Eteindre le plan 1 du cube.
-	* @param[in]	tempo temps d'extinction du dessus du cube.
-	*/
-	void cubeTopOff(long tempo);
+/**
+ * @fn			cubeTopOff
+ * @brief		Eteindre le plan 1 du cube.
+ * @param[in]	tempo temps d'extinction du dessus du cube.
+ */
+void cubeTopOff(long tempo);
 	
 /**
  * @fn			cubeTopOn
@@ -97,51 +97,51 @@ void cubeMidleOff(long tempo);
 void cubeMidleOn(long tempo);
 
 /**
- * @fn				cubeBottomOff
- * @brief			Eteindre le plan 3 du cube.
+ * @fn			cubeBottomOff
+ * @brief		Eteindre le plan 3 du cube.
  * @param[in]	tempo temps d'extinction du plan 3 du cube.	
  */
 void cubeBottomOff(long tempo);
 	
 /**
- * @fn				cubeBottomOn
- * @brief			Allumer le plan 3 du cube.
+ * @fn			cubeBottomOn
+ * @brief		Allumer le plan 3 du cube.
  * @param[in]	tempo temps d'allumage du plan 3 du cube.
  */
 void cubeBottomOn(long tempo);
 	
 /**
- * @fn				cubeBlink
- * @brief			Faire clignoter le cube de leds.
+ * @fn			cubeBlink
+ * @brief		Faire clignoter le cube de leds.
  * @param[in]	tempo le temps de clignotement en milli seconde
  * @param[in]	blinkNbr le nombre de clignotement souhaite
  */
 void cubeBlink(long tempo, char blinkNbr);
 
 /**
- * @fn				cubeCircularDemo
- * @brief			Faire une demonstareation d'alumage circulaire.
+ * @fn			cubeCircularDemo
+ * @brief		Faire une demonstareation d'alumage circulaire.
  * @param[in]	tempo temps de l'effet de rotation.
  */
 void cubeCircularDemo(long tempo);
 
 /**
- * @fn				cubeFace1On
- * @brief			Allumer la face numero 1 du cube.
+ * @fn			cubeFace1On
+ * @brief		Allumer la face numero 1 du cube.
  * @param[in]	tempo temps d'allumage de la face 1 du cube.
  */
 void cubeFace1On(long tempo);
 
 /**
- * @fn				cubeFace2On
- * @brief			Allumer la face numero 2 du cube.
+ * @fn			cubeFace2On
+ * @brief		Allumer la face numero 2 du cube.
  * @param[in]	tempo temps d'allumage de la face 2 du cube.
  */
 void cubeFace2On(long tempo);
 
 /**
- * @fn				cubeFace3On
- * @brief			Allumer la face numero 3 du cube.
+ * @fn			cubeFace3On
+ * @brief		Allumer la face numero 3 du cube.
  * @param[in]	tempo temps d'allumage de la face 3 du cube.
  */
 void cubeFace3On(long tempo);
@@ -153,29 +153,29 @@ void cubeFace3On(long tempo);
 void cubeFace4On(long tempo);
 
 /**
- * @fn				cubeAllFaceOn
- * @brief			Allumer toutes les faces du cube.
+ * @fn			cubeAllFaceOn
+ * @brief		Allumer toutes les faces du cube.
  * @param[in]	tempo temps d'attente entre allumage de chaque face.
  */
 void cubeAllFaceOn(long tempo);
 
 /**
- * @fn				testCubeFace
- * @brief			Allumer les face de facon circulaire
+ * @fn			testCubeFace
+ * @brief		Allumer les face de facon circulaire
  * @param[in]	tempo temps entre l'allumage de chaque face du cube.
  */
 void testCubeFace(long tempo);
 
 /**
- * @fn				rotation
- * @brief			Faire une demonstareation d'alumage circulaire.
+ * @fn			rotation
+ * @brief		Faire une demonstareation d'alumage circulaire.
  * @param[in]	tempo temps d'allumage entre les LEDs des plans du cube.
  */
 void rotation(long tempo);
 
 /**
- * @fn				effect
- * @brief			Effet d'allumage du bas vers le haut et vis vers ca.
+ * @fn			effect
+ * @brief		Effet d'allumage du bas vers le haut et vis vers ca.
  * @param[in]	tempo temps  entre les transition de niveaux
  * @param[in]	nbr nobre de fois que l'on veut voir l'effet
  */
