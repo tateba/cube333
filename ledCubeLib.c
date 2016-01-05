@@ -1,10 +1,10 @@
 
 /**
- * @file		cubeLib.ino
- * @brief		Definition des fonctions permettant de tester le Cube à LED3x3x3.
+ * @file	cubeLib.ino
+ * @brief	Definition des fonctions permettant de tester le Cube à LED3x3x3.
  * @author	Theodore ATEBA
  * @version	1.0.
- * @date		29 Mai 2015
+ * @date	29 Mai 2015
  */
 
 #include "ledCubeLib.h"
